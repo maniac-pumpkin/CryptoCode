@@ -1,0 +1,38 @@
+:root {
+	/* Colors */
+	--light-green-color: linear-gradient(90deg, #3fe8ab 0%, #78cdcd 100%);
+	--dark-grey-color: #1b1b1b;
+	--light-grey-color: #b8b8b8;
+	--black-color: #111111;
+	--gray-color: #969696;
+	--white-color: #f6f6f6;
+	/* Fonts */
+	--roboto-Medium: roboto-M;
+	--spaceGrotesk-Bold: spaceGrotesk-B;
+	--spaceGrotesk-Medium: spaceGrotesk-M;
+	--spaceGrotesk-Regular: spaceGrotesk-R;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1.6rem;
+	min-height: 100vh;
+	background-color: var(--dark-grey-color);
+}
+
+/* h1 {
+	font-family: var(--spaceGrotesk-Bold);
+	font-size: 8rem;
+	line-height: 1.5;
+	color: var(--white-color);
+} */
