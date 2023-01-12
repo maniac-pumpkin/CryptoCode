@@ -1,0 +1,23 @@
+/* Roboto Medium */
+@font-face {
+	font-family: roboto-M;
+	src: url("../fonts/Roboto-Medium.ttf");
+}
+
+/* Space Grotesk Bold */
+@font-face {
+	font-family: spaceGrotesk-B;
+	src: url("../fonts/SpaceGrotesk-Bold.ttf");
+}
+
+/* Space Grotesk Medium */
+@font-face {
+	font-family: spaceGrotesk-M;
+	src: url("../fonts/SpaceGrotesk-Medium.ttf");
+}
+
+/* Space Grotesk Regular */
+@font-face {
+	font-family: spaceGrotesk-R;
+	src: url("../fonts/SpaceGrotesk-Regular.ttf");
+}
