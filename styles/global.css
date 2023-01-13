@@ -4,8 +4,11 @@
 	--dark-grey-color: #1b1b1b;
 	--light-grey-color: #b8b8b8;
 	--black-color: #111111;
+	--second-black: #151515;
 	--gray-color: #969696;
 	--white-color: #f6f6f6;
+	--green-grey-color: #383f3e;
+	--regular-grey-color: #3b3d3c;
 	/* Fonts */
 	--roboto-Medium: roboto-M;
 	--spaceGrotesk-Bold: spaceGrotesk-B;
@@ -30,9 +33,104 @@ body {
 	background-color: var(--dark-grey-color);
 }
 
-/* h1 {
+h1 {
 	font-family: var(--spaceGrotesk-Bold);
 	font-size: 8rem;
 	line-height: 1.5;
 	color: var(--white-color);
-} */
+}
+
+h2 {
+	font-family: var(--spaceGrotesk-Bold);
+	font-size: 5.8rem;
+	line-height: 1.5;
+	color: var(--white-color);
+}
+
+.text {
+	font-family: var(--roboto-Medium);
+	color: var(--gray-color);
+	line-height: 1.5;
+}
+
+.btn {
+	font-family: var(--spaceGrotesk-Regular);
+	font-size: 1.6rem;
+	border-radius: 1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.form-wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.form-wrapper__login-form {
+	width: 74rem;
+	padding-top: 5rem;
+	padding-bottom: 7rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: var(--second-black);
+	border: 0.4rem solid var(--green-grey-color);
+	border-radius: 2rem;
+}
+
+.form-wrapper__login-form-title {
+	font-size: 5.5rem;
+	margin-bottom: 3rem;
+}
+
+.form-wrapper__login-form-text {
+	font-size: 2rem;
+	max-width: 44rem;
+	margin-bottom: 6rem;
+}
+
+.login-form__wrapper-username,
+.login-form__wrapper-password {
+	width: 56rem;
+	height: 8.5rem;
+	display: flex;
+	align-items: center;
+	padding-left: 2.5rem;
+	padding-right: 1rem;
+	background-color: var(--regular-grey-color);
+	border-radius: 1rem;
+	margin-bottom: 3.5rem;
+}
+
+.login-form__username-input,
+.login-form__password-input {
+	width: 80%;
+	height: 50%;
+	font-family: var(--roboto-Medium);
+	font-size: 1.8rem;
+	background-color: transparent;
+	color: var(--white-color);
+	border: none;
+	outline: none;
+	margin-left: 2.5rem;
+}
+
+.login-form__wrapper-forgot-password {
+	margin-bottom: 3rem;
+	cursor: pointer;
+}
+
+.login-form__wrapper-submit-button {
+	width: 35rem;
+	height: 7rem;
+	font-family: var(--spaceGrotesk-Bold);
+	font-size: 2rem;
+	letter-spacing: 0.2rem;
+	background: var(--light-green-color);
+	border-radius: 1.5rem;
+}

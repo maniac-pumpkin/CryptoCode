@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Crypto Code | Login Form</title>
 		<link rel="stylesheet" href="./styles/reset.css" />
 		<link rel="stylesheet" href="./styles/font.css" />
 		<link rel="stylesheet" href="./styles/container.css" />
@@ -12,6 +12,67 @@
 		<link rel="stylesheet" href="./styles/responsive.css" />
 	</head>
 	<body>
+		<!-- LogIn Form -->
+		<div class="form-wrapper">
+			<form class="form-wrapper__login-form">
+				<h1 class="form-wrapper__login-form-title">Log into your Website</h1>
+
+				<p class="form-wrapper__login-form-text text">
+					Join the cryptocurrency revolution today and take control of your
+					financial future.
+				</p>
+
+				<div class="login-form__wrapper-username">
+					<svg
+						width="30"
+						height="30"
+						viewBox="0 0 30 30"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M15 2.5C13.7639 2.5 12.5555 2.86656 11.5277 3.55331C10.4999 4.24007 9.6988 5.21619 9.22575 6.35823C8.75271 7.50027 8.62893 8.75693 8.87009 9.96931C9.11125 11.1817 9.7065 12.2953 10.5806 13.1694C11.4547 14.0435 12.5683 14.6388 13.7807 14.8799C14.9931 15.1211 16.2497 14.9973 17.3918 14.5242C18.5338 14.0512 19.5099 13.2501 20.1967 12.2223C20.8834 11.1945 21.25 9.98613 21.25 8.75C21.25 7.0924 20.5915 5.50269 19.4194 4.33058C18.2473 3.15848 16.6576 2.5 15 2.5ZM15 12.5C14.2583 12.5 13.5333 12.2801 12.9166 11.868C12.2999 11.456 11.8193 10.8703 11.5355 10.1851C11.2516 9.49984 11.1774 8.74584 11.3221 8.01841C11.4667 7.29098 11.8239 6.6228 12.3483 6.09835C12.8728 5.5739 13.541 5.21675 14.2684 5.07206C14.9958 4.92736 15.7498 5.00162 16.4351 5.28545C17.1203 5.56928 17.706 6.04993 18.118 6.66661C18.5301 7.2833 18.75 8.00832 18.75 8.75C18.75 9.74456 18.3549 10.6984 17.6517 11.4017C16.9484 12.1049 15.9946 12.5 15 12.5ZM26.25 26.25V25C26.25 22.6794 25.3281 20.4538 23.6872 18.8128C22.0462 17.1719 19.8206 16.25 17.5 16.25H12.5C10.1794 16.25 7.95376 17.1719 6.31282 18.8128C4.67187 20.4538 3.75 22.6794 3.75 25V26.25H6.25V25C6.25 23.3424 6.90848 21.7527 8.08058 20.5806C9.25269 19.4085 10.8424 18.75 12.5 18.75H17.5C19.1576 18.75 20.7473 19.4085 21.9194 20.5806C23.0915 21.7527 23.75 23.3424 23.75 25V26.25H26.25Z"
+							fill="#969696"
+						/>
+					</svg>
+					<input
+						type="text"
+						class="login-form__username-input"
+						placeholder="Username"
+					/>
+				</div>
+
+				<div class="login-form__wrapper-password">
+					<svg
+						width="30"
+						height="30"
+						viewBox="0 0 30 30"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M15 3C11.5538 3 8.75 5.80375 8.75 9.25V13H7.5C6.12125 13 5 14.1213 5 15.5V25.5C5 26.8787 6.12125 28 7.5 28H22.5C23.8787 28 25 26.8787 25 25.5V15.5C25 14.1213 23.8787 13 22.5 13H21.25V9.25C21.25 5.80375 18.4462 3 15 3ZM22.5 15.5L22.5025 25.5H7.5V15.5H22.5ZM11.25 13V9.25C11.25 7.1825 12.9325 5.5 15 5.5C17.0675 5.5 18.75 7.1825 18.75 9.25V13H11.25Z"
+							fill="#969696"
+						/>
+					</svg>
+					<input
+						type="password"
+						class="login-form__password-input"
+						placeholder="Password"
+					/>
+				</div>
+
+				<p class="login-form__wrapper-forgot-password text">
+					Forgot Password ?
+				</p>
+
+				<input
+					type="submit"
+					value="LOGIN"
+					class="login-form__wrapper-submit-button btn"
+				/>
+			</form>
+		</div>
 		<script src="./scripts/main.js"></script>
 	</body>
 </html>
