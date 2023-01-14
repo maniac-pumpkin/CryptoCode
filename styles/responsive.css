@@ -3,11 +3,29 @@
 @media (max-width: 1200px) {
 }
 @media (max-width: 992px) {
+	/* ! Header & Navigation */
+	.nav-list__links {
+		font-size: 1.6rem;
+		margin-inline: 1.8rem;
+	}
 }
 @media (max-width: 768px) {
 	/* LogIn Form */
 	.form-wrapper {
 		width: 75%;
+	}
+
+	/* ! Header & Navigation */
+	.nav-list {
+		display: none;
+	}
+
+	.nav-list__logout-btn {
+		display: none;
+	}
+
+	.hamburger-menu {
+		display: flex;
 	}
 }
 @media (max-width: 576px) {
@@ -25,6 +43,11 @@
 		font-size: 1.2rem;
 		max-width: 25rem;
 		margin-bottom: 3rem;
+	}
+
+	.form-wrapper__login-form {
+		padding-top: 1.5rem;
+		padding-bottom: 2rem;
 	}
 
 	.login-form__wrapper-forgot-password {

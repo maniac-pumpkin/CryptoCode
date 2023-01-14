@@ -55,15 +55,16 @@ h2 {
 }
 
 .btn {
-	font-family: var(--spaceGrotesk-Regular);
+	font-family: var(--spaceGrotesk-Medium);
 	font-size: 1.6rem;
-	border-radius: 1rem;
+	border-radius: 0.5rem;
+	background: var(--light-green-color);
 	border: none;
 	outline: none;
 	cursor: pointer;
 }
 
-/* LogIn Form */
+/* ? LogIn Form */
 .form-wrapper {
 	width: 55rem;
 	position: absolute;
@@ -136,4 +137,50 @@ h2 {
 	letter-spacing: 0.2rem;
 	background: var(--light-green-color);
 	border-radius: 0.6rem;
+}
+
+/* ! Header & Navigation */
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.nav-list {
+	display: flex;
+}
+
+.nav-list__links {
+	font-family: var(--spaceGrotesk-Medium);
+	font-size: 1.8rem;
+	margin-inline: 2rem;
+}
+
+.nav-list__link {
+	color: var(--white-color);
+	text-decoration: none;
+}
+
+.nav-list__logout-btn {
+	width: 13rem;
+	height: 3.5rem;
+}
+
+.hamburger-menu {
+	width: 3.2rem;
+	height: 2.4rem;
+	margin-right: 1rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ham-dash {
+	width: 100%;
+	height: 0.3rem;
+	background-color: var(--white-color);
+	border-radius: 0.3rem;
 }
