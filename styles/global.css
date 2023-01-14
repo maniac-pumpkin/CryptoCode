@@ -25,6 +25,7 @@
 html {
 	font-size: 10px;
 	scroll-behavior: smooth;
+	user-select: none;
 }
 
 body {
@@ -62,7 +63,9 @@ h2 {
 	cursor: pointer;
 }
 
+/* LogIn Form */
 .form-wrapper {
+	width: 55rem;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -70,9 +73,9 @@ h2 {
 }
 
 .form-wrapper__login-form {
-	width: 74rem;
-	padding-top: 5rem;
-	padding-bottom: 7rem;
+	width: 100%;
+	padding-top: 3.5rem;
+	padding-bottom: 5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -80,44 +83,44 @@ h2 {
 	text-align: center;
 	background-color: var(--second-black);
 	border: 0.4rem solid var(--green-grey-color);
-	border-radius: 2rem;
+	border-radius: 1.8rem;
 }
 
 .form-wrapper__login-form-title {
-	font-size: 5.5rem;
-	margin-bottom: 3rem;
+	font-size: 4.3rem;
+	margin-bottom: 2.1rem;
 }
 
 .form-wrapper__login-form-text {
-	font-size: 2rem;
-	max-width: 44rem;
-	margin-bottom: 6rem;
+	font-size: 1.8rem;
+	max-width: 39rem;
+	margin-bottom: 4rem;
 }
 
 .login-form__wrapper-username,
 .login-form__wrapper-password {
-	width: 56rem;
-	height: 8.5rem;
+	width: 80%;
+	height: 6.6rem;
 	display: flex;
 	align-items: center;
-	padding-left: 2.5rem;
+	padding-left: 2.2rem;
 	padding-right: 1rem;
 	background-color: var(--regular-grey-color);
-	border-radius: 1rem;
-	margin-bottom: 3.5rem;
+	border-radius: 0.6rem;
+	margin-bottom: 3rem;
 }
 
 .login-form__username-input,
 .login-form__password-input {
-	width: 80%;
-	height: 50%;
+	width: 85%;
+	height: 75%;
 	font-family: var(--roboto-Medium);
 	font-size: 1.8rem;
 	background-color: transparent;
 	color: var(--white-color);
 	border: none;
 	outline: none;
-	margin-left: 2.5rem;
+	margin-left: 2rem;
 }
 
 .login-form__wrapper-forgot-password {
@@ -126,11 +129,11 @@ h2 {
 }
 
 .login-form__wrapper-submit-button {
-	width: 35rem;
-	height: 7rem;
+	width: 28rem;
+	height: 5rem;
 	font-family: var(--spaceGrotesk-Bold);
-	font-size: 2rem;
+	font-size: 1.8rem;
 	letter-spacing: 0.2rem;
 	background: var(--light-green-color);
-	border-radius: 1.5rem;
+	border-radius: 0.6rem;
 }

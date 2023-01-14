@@ -5,6 +5,34 @@
 @media (max-width: 992px) {
 }
 @media (max-width: 768px) {
+	/* LogIn Form */
+	.form-wrapper {
+		width: 75%;
+	}
 }
 @media (max-width: 576px) {
+	/* LogIn Form */
+	.form-wrapper {
+		width: 94%;
+	}
+
+	.form-wrapper__login-form-title {
+		font-size: 3rem;
+		max-width: 35rem;
+	}
+
+	.form-wrapper__login-form-text {
+		font-size: 1.2rem;
+		max-width: 25rem;
+		margin-bottom: 3rem;
+	}
+
+	.login-form__wrapper-forgot-password {
+		font-size: 1.4rem;
+	}
+
+	.login-form__wrapper-submit-button {
+		width: 80%;
+		height: 5rem;
+	}
 }
