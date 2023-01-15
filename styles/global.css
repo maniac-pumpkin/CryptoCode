@@ -36,15 +36,15 @@ body {
 
 h1 {
 	font-family: var(--spaceGrotesk-Bold);
-	font-size: 8rem;
-	line-height: 1.5;
+	font-size: 6.5rem;
+	line-height: 1.1;
 	color: var(--white-color);
 }
 
 h2 {
 	font-family: var(--spaceGrotesk-Bold);
 	font-size: 5.8rem;
-	line-height: 1.5;
+	line-height: 1.2;
 	color: var(--white-color);
 }
 
@@ -59,9 +59,29 @@ h2 {
 	font-size: 1.6rem;
 	border-radius: 0.5rem;
 	background: var(--light-green-color);
+	color: var(--black-color);
 	border: none;
 	outline: none;
 	cursor: pointer;
+}
+
+.direct-link {
+	font-family: var(--spaceGrotesk-Medium);
+	font-size: 1.6rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.5rem;
+	background: var(--light-green-color);
+	color: var(--black-color);
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+.direct-link:checked {
+	color: var(--black-color);
+	text-decoration: none;
 }
 
 /* ? LogIn Form */
@@ -108,7 +128,11 @@ h2 {
 	padding-right: 1rem;
 	background-color: var(--regular-grey-color);
 	border-radius: 0.6rem;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
+}
+
+.login-form__wrapper-password {
+	margin-bottom: 1.5rem;
 }
 
 .login-form__username-input,
@@ -124,9 +148,24 @@ h2 {
 	margin-left: 2rem;
 }
 
-.login-form__wrapper-forgot-password {
-	margin-bottom: 3rem;
-	cursor: pointer;
+.error-icon {
+	margin-right: 0.3rem;
+}
+
+.login-form__warning-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.4rem;
+	letter-spacing: 0.1rem;
+	color: #ff0032;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.warn {
+	opacity: 1;
+	visibility: visible;
 }
 
 .login-form__wrapper-submit-button {
@@ -137,6 +176,12 @@ h2 {
 	letter-spacing: 0.2rem;
 	background: var(--light-green-color);
 	border-radius: 0.6rem;
+	margin-top: 1.2rem;
+}
+
+.login-form__wrapper-forgot-password {
+	margin-top: 2rem;
+	cursor: pointer;
 }
 
 /* ! Header & Navigation */
@@ -156,6 +201,11 @@ h2 {
 	font-family: var(--spaceGrotesk-Medium);
 	font-size: 1.8rem;
 	margin-inline: 2rem;
+	transition: all 150ms ease-in-out;
+}
+
+.nav-list__links:hover {
+	transform: scale(1.1);
 }
 
 .nav-list__link {
@@ -183,4 +233,141 @@ h2 {
 	height: 0.3rem;
 	background-color: var(--white-color);
 	border-radius: 0.3rem;
+	transition: all 200ms ease-in-out;
+}
+
+.ham-dash--toggle .ham-dash:nth-child(1) {
+	transform: rotate(47deg) translate(1.4rem);
+}
+
+.ham-dash--toggle .ham-dash:nth-child(2) {
+	display: none;
+}
+
+.ham-dash--toggle .ham-dash:nth-child(3) {
+	transform: rotate(-47deg) translate(1.4rem);
+}
+
+.ham-nav {
+	width: 20rem;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -20rem;
+	background-color: var(--green-grey-color);
+	visibility: hidden;
+	transition: all 200ms ease-in-out;
+}
+
+.ham-nav--show {
+	visibility: visible;
+	left: 0;
+}
+
+.ham-nav-logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin-top: 1rem;
+}
+
+.ham-nav-logo__logout-btn {
+	width: 3rem;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0.1;
+	padding: 0;
+}
+
+.ham-nav-list__links {
+	list-style-type: none;
+	margin-block: 3.6rem;
+	margin-left: 2rem;
+}
+
+.ham-nav-list__link {
+	font-family: var(--spaceGrotesk-Medium);
+	font-size: 2rem;
+	color: var(--white-color);
+	text-decoration: none;
+}
+
+/* ? Main & Starting Banner */
+.starting-banner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 14rem;
+}
+
+.starting-banner__img {
+	width: 100%;
+	height: 100%;
+}
+
+.starting-banner__text-cover {
+	margin-left: 8rem;
+	text-align: left;
+}
+
+.starting-banner__text-cover-title {
+	margin-bottom: 3rem;
+}
+
+.starting-banner__text-cover-subtext {
+	max-width: 60rem;
+	margin-bottom: 5rem;
+}
+
+.starting-banner__text-cover-direct-link {
+	width: 18rem;
+	height: 4.5rem;
+}
+
+/* ! List of Trusted Companies */
+.trusted-companies-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 4.5rem;
+	margin-top: 14rem;
+}
+
+/* ? Crypto News */
+.crypto-news {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 14rem;
+}
+
+.crypto-news__img {
+	width: 100%;
+	height: 100%;
+}
+
+.crypto-news__text-cover {
+	text-align: left;
+	margin-left: 8rem;
+}
+
+.crypto-news__text-cover-title {
+	margin-bottom: 3rem;
+}
+
+.crypto-news__text-cover-text {
+	margin-bottom: 3rem;
+}
+
+.crypto-news__direct-link {
+	width: 18rem;
+	height: 4.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

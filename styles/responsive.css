@@ -1,14 +1,49 @@
 @media (max-width: 1400px) {
 }
+
 @media (max-width: 1200px) {
+	/* ? Main & Starting Banner */
+	.starting-banner__text-cover-title {
+		font-size: 5.5rem;
+	}
+
+	.starting-banner__text-cover-subtext {
+		max-width: 50rem;
+	}
 }
+
 @media (max-width: 992px) {
 	/* ! Header & Navigation */
 	.nav-list__links {
 		font-size: 1.6rem;
 		margin-inline: 1.8rem;
 	}
+
+	/* ? Main & Starting Banner */
+	.starting-banner {
+		flex-direction: column;
+	}
+
+	.starting-banner__img {
+		width: 90%;
+		height: 90%;
+	}
+
+	.starting-banner__text-cover {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 0;
+		margin-top: 5rem;
+		text-align: center;
+	}
+
+	.starting-banner__text-cover-subtext {
+		max-width: 50rem;
+		margin-bottom: 3.5rem;
+	}
 }
+
 @media (max-width: 768px) {
 	/* LogIn Form */
 	.form-wrapper {
@@ -27,7 +62,24 @@
 	.hamburger-menu {
 		display: flex;
 	}
+
+	/* ? Main & Starting Banner */
+	.starting-banner__img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.starting-banner__text-cover-title {
+		font-size: 5rem;
+		max-width: 41rem;
+	}
+
+	.starting-banner__text-cover-subtext {
+		max-width: 41rem;
+		font-size: 1.4rem;
+	}
 }
+
 @media (max-width: 576px) {
 	/* LogIn Form */
 	.form-wrapper {
@@ -57,5 +109,21 @@
 	.login-form__wrapper-submit-button {
 		width: 80%;
 		height: 5rem;
+	}
+
+	/* ? Main & Starting Banner */
+	.starting-banner__img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.starting-banner__text-cover-title {
+		font-size: 4rem;
+		max-width: 30rem;
+	}
+
+	.starting-banner__text-cover-subtext {
+		max-width: 27rem;
+		font-size: 1.2rem;
 	}
 }
